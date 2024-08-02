@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app)
 let analytics;
 if (typeof window !== 'undefined') {
-  analytics = getAnalyticsBrowser(app);
+  analytics = getAnalytics(app);
 }
 
 export {firestore, analytics}
